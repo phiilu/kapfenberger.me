@@ -1,23 +1,24 @@
-import React, {Component} from 'react';
-import styled, {ThemeProvider} from 'styled-components';
+import React, { Component } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import Head from "next/head";
 
-import PageWrapper from './PageWrapper';
-import PageTitle from './PageTitle/';
-import Box from './Box';
-import Block from './Block';
-import ProfileImageWrapper from './ProfileImageWrapper';
-import ProfileImage from './ProfileImage';
-import Text from './Text';
-import Icons from './Icons';
-import Link from './Link';
-import Subtitle from './Subtitle';
+import PageWrapper from "./PageWrapper";
+import PageTitle from "./PageTitle/";
+import Box from "./Box";
+import Block from "./Block";
+import ProfileImageWrapper from "./ProfileImageWrapper";
+import ProfileImage from "./ProfileImage";
+import Text from "./Text";
+import Icons from "./Icons";
+import Link from "./Link";
+import Subtitle from "./Subtitle";
 
-import Highlight from './Highlight';
+import Highlight from "./Highlight";
 
 const theme = {
-  background: 'url(/static/img/pattern.svg)',
-  primary: 'cornflowerblue',
-  fontFamily: 'Raleway, Helvetica',
+  background: "url(/static/img/pattern.svg)",
+  primary: "cornflowerblue",
+  fontFamily: "Raleway, Helvetica"
 };
 
 class App extends Component {
@@ -25,6 +26,15 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <PageWrapper>
+          <Head>
+            <title>
+              Florian Kapfenberger | Webdeveloper | IT-Security Student
+            </title>
+            <meta
+              name="viewport"
+              content="initial-scale=1.0, width=device-width"
+            />
+          </Head>
           <Block>
             <ProfileImageWrapper>
               <ProfileImage src="/static/img/profile.jpg" alt="Ich" />
@@ -36,9 +46,9 @@ class App extends Component {
               </Text>
               <Text center>
                 Wie du wohl bereits gelesen hast heiße ich Florian. Ich bin ein ambitionierter
-                {' '}
+                {" "}
                 Fullstack Webentwickler. Aktuell entwickle ich hauptsächlich mit der
-                {' '}
+                {" "}
                 Programmiersprache <strong>
                   <Highlight
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
