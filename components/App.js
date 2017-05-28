@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
+import React, { Component } from 'react';
+import { FaGithub, FaTwitter, FaInstagram, FaXing } from 'react-icons/lib/fa';
+import { ThemeProvider } from 'styled-components';
 
 import PageWrapper from './PageWrapper';
 import PageTitle from './PageTitle/';
@@ -51,8 +52,7 @@ class App extends Component {
                 I like to develop frontends for web applications,
                 but I also enjoy writing backend code too. I would probably say I am a
                 {' '}
-                <i>Fullstack Developer</i>
-                , if I were asked what I do.
+                <i>Fullstack Developer</i>.
               </Text>
               <Text center>
                 Currently I enjoy developing & learning <strong>
@@ -81,24 +81,24 @@ class App extends Component {
                   target="_blank"
                   color="#24292E"
                 >
-                  <i className="fa fa-github" />
+                  <FaGithub />
                 </Link>
                 <Link
                   href="https://twitter.com/phiilu"
                   target="_blank"
                   color="#5698D5"
                 >
-                  <i className="fa fa-twitter" />
+                  <FaTwitter />
                 </Link>
                 <Link href="https://www.instagram.com/phiilu/" target="_blank">
-                  <i className="fa fa-instagram" />
+                  <FaInstagram />
                 </Link>
                 <Link
                   href="https://www.xing.com/profile/Florian_Kapfenberger"
                   target="_blank"
                   color="#007575"
                 >
-                  <i className="fa fa-xing" />
+                  <FaXing />
                 </Link>
               </Icons>
             </Box>

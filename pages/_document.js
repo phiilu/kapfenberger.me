@@ -13,7 +13,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Raleway"
             rel="stylesheet"
           />
-          <script src="https://use.fontawesome.com/72ba5df163.js" />
           <title>Florian Kapfenberger | Webdeveloper</title>
           {styleTags}
         </Head>
