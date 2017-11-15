@@ -42,7 +42,7 @@ export default class Index extends React.Component {
               <Text center>
                 My name is <strong>Florian</strong> and my passion is to develop
                 frontend web applications, but I'm also interested in writing
-                backend code too. People would say I am{" "}
+                backend code too. People would say I am a{" "}
                 <i>Fullstack Developer</i>.
               </Text>
               <Text center>
