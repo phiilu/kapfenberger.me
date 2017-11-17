@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import PageTitleWrapper from './PageTitleWrapper';
+import PageTitleWrapper from "./PageTitleWrapper";
 
 const PageTitleText = styled.h1`
   color: ${props => props.theme.primary};
@@ -8,7 +8,7 @@ const PageTitleText = styled.h1`
   font-size: 2rem;
   padding: 0 0 0.5rem;
   margin: 2rem 0 0;
-  text-align: ${props => props.center ? 'center' : 'left'};
+  text-align: ${props => (props.center ? "center" : "left")};
 
   @media screen and (max-width: 415px) {
     font-size: 1.5rem;

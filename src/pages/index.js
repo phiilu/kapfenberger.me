@@ -21,8 +21,7 @@ import pattern from "../img/pattern.svg";
 
 const theme = {
   background: `url(${pattern})`,
-  primary: "cornflowerblue",
-  fontFamily: "Raleway, Helvetica"
+  primary: "cornflowerblue"
 };
 
 export default class Index extends React.Component {

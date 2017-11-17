@@ -12,8 +12,10 @@
     "gatsby-plugin-preact": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^2.0.2",
+    "gatsby-plugin-typography": "^1.7.10",
     "react-feather": "^1.0.7",
     "styled-components": "^2.2.3",
+    "typography": "^0.16.6",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
