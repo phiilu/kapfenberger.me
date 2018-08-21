@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+footer div {
+  margin: 20px 0;
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+svg {
+  color: #333;
+}

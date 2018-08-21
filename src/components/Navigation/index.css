@@ -1,0 +1,23 @@
+nav {
+  padding: 20px;
+  background: #d90429;
+}
+
+nav a {
+  text-decoration: none;
+  color: #edf2f4;
+}
+
+nav .wrapper,
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .menu > a {
+  margin: 0 20px;
+}
+
+nav .menu > a:last-child {
+  margin: 0 0 0 20px;
+}

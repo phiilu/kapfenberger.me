@@ -1,36 +1,22 @@
 {
-  "name": "site",
-  "description": "My personal site",
-  "version": "1.0.0",
-  "author": "Florian Kapfenberger <florian@kapfenberger.me>",
+  "name": "kapfenberger.me",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "feather-icons": "^3.3.0",
-    "gatsby": "^1.9.112",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-google-analytics": "^1.0.12",
-    "gatsby-plugin-netlify": "^1.0.8",
-    "gatsby-plugin-preact": "^1.0.12",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-styled-components": "^2.0.2",
-    "gatsby-plugin-typography": "^1.7.10",
-    "react-feather": "^1.0.7",
-    "styled-components": "^2.2.3",
-    "typography": "^0.16.6",
-    "webfontloader": "^1.6.28"
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "@fortawesome/react-fontawesome": "^0.1.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "@fortawesome/fontawesome-pro": "^5.2.0"
   }
 }

@@ -1,0 +1,74 @@
+main {
+  flex: 1;
+  padding: 2.5rem 0;
+  background: white;
+}
+
+main h1,
+main h3 {
+  text-align: center;
+}
+
+main h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: #ef233c;
+
+  border-radius: 3px;
+}
+
+.section-project {
+  margin-bottom: 5rem;
+}
+
+.projects {
+  display: flex;
+}
+
+.project-wrapper {
+  height: 150px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-wrapper img:hover {
+  transform: rotate(10deg);
+}
+
+.project-wrapper .stack {
+  padding: 2rem 0;
+}
+
+.project-wrapper .stack > svg {
+  margin: 0 5px;
+}
+
+.html {
+  color: #e34f26;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.css {
+  color: #2f77b8;
+}
+
+.angular {
+  color: #cc2b39;
+}

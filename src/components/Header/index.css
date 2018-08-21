@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+figure {
+  margin: 0 20px 0 0;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5%;
+}
+
+.introduction {
+  flex: 1;
+  max-width: 500px;
+  line-height: 1.7;
+}
