@@ -72,3 +72,24 @@ main h1::after {
 .angular {
   color: #cc2b39;
 }
+
+.about-me {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.about-me .left {
+  width: 50%;
+}
+
+.about-me .left h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: left;
+  margin: 2em 0 1em;
+  color: #d90429;
+}
+
+.about-me .left p {
+  line-height: 1.6;
+  font-size: 1.2em;
+}

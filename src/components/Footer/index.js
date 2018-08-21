@@ -23,20 +23,6 @@ const Footer = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={["fab", "xing"]} size="lg" />
-        </a>
-        <a
-          href="https://github.com/phiilu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
-        </a>
-        <a
-          href="https://github.com/phiilu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" />
         </a>
         <a
@@ -46,6 +32,20 @@ const Footer = () => (
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
+        </a>
+        <a
+          href="https://github.com/phiilu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={["fab", "xing"]} size="lg" />
+        </a>
+        <a
+          href="https://github.com/phiilu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
         </a>
       </div>
     </Wrapper>

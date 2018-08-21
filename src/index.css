@@ -12,15 +12,13 @@ body {
   color: #2b2d42;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-h2,
-h3,
-h4,
-h5,
-h5,
 a,
 p {
   font-family: "Source Sans Pro", sans-serif;
