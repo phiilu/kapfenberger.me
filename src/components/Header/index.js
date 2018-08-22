@@ -22,7 +22,7 @@ const Header = () => (
         </h3>
       </div>
     </header>
-  </Wrapper>
+  </Wrapper >
 );
 
 export default Header;

@@ -22,7 +22,15 @@ main h1::after {
 }
 
 .section-project {
-  margin-bottom: 5rem;
+  padding: 4rem;
+  background: rgb(246, 246, 246);
+}
+
+
+.section-project h4 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 .projects {
@@ -31,8 +39,8 @@ main h1::after {
 
 .project-wrapper {
   height: 150px;
-  padding: 2rem;
   display: flex;
+  padding: 2rem 0;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -74,7 +82,6 @@ main h1::after {
 }
 
 .about-me {
-  display: flex;
   margin-bottom: 5rem;
 }
 
@@ -92,4 +99,19 @@ main h1::after {
 .about-me .left p {
   line-height: 1.6;
   font-size: 1.2em;
+}
+
+.about-me .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about-me .right img {
+  transform: rotate(5deg)
+}
+
+.about-me-wrapper {
+  display: flex;
 }

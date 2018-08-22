@@ -24,3 +24,7 @@ figure img {
   max-width: 500px;
   line-height: 1.7;
 }
+
+.introduction h3 {
+  font-weight: normal;
+}
