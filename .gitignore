@@ -1,4 +1,13 @@
 .DS_Store
 node_modules
+
+# FontAwesome token is in that file
 .npmrc
-yarn-error.log
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
