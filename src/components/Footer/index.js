@@ -19,7 +19,7 @@ const Footer = () => (
           <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
         </a>
         <a
-          href="https://github.com/phiilu"
+          href="https://twitter.com/phiilu"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -27,21 +27,21 @@ const Footer = () => (
         </a>
         <a
           className="instagram"
-          href="https://github.com/phiilu"
+          href="https://www.instagram.com/phiilu/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
         </a>
         <a
-          href="https://github.com/phiilu"
+          href="https://www.xing.com/profile/Florian_Kapfenberger"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={["fab", "xing"]} size="lg" />
         </a>
         <a
-          href="https://github.com/phiilu"
+          href="https://www.linkedin.com/in/florian-kapfenberger-59581b164/"
           target="_blank"
           rel="noopener noreferrer"
         >

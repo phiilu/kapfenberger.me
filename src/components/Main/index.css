@@ -26,8 +26,8 @@ main h1::after {
   background: rgb(246, 246, 246);
 }
 
-
-.section-project h4 {
+.section-project h4,
+.section-oss-activity h4 {
   text-align: center;
   font-weight: 300;
   font-size: 1.2em;
@@ -35,34 +35,8 @@ main h1::after {
 
 .projects {
   display: flex;
-}
-
-.project-wrapper {
-  height: 150px;
-  display: flex;
-  padding: 2rem 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.project-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  transition: all 0.2s ease-in-out;
-}
-
-.project-wrapper img:hover {
-  transform: rotate(10deg);
-}
-
-.project-wrapper .stack {
-  padding: 2rem 0;
-}
-
-.project-wrapper .stack > svg {
-  margin: 0 5px;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .html {
@@ -79,6 +53,14 @@ main h1::after {
 
 .angular {
   color: #cc2b39;
+}
+
+.react {
+  color: #80d8f7;
+}
+
+.php {
+  color: #777caf;
 }
 
 .about-me {
@@ -109,9 +91,13 @@ main h1::after {
 }
 
 .about-me .right img {
-  transform: rotate(5deg)
+  transform: rotate(5deg);
 }
 
 .about-me-wrapper {
   display: flex;
+}
+
+.section-oss-activity {
+  padding: 4rem 0;
 }
