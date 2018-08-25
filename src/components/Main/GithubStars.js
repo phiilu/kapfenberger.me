@@ -6,7 +6,7 @@ import GithubRepo from "./GithubRepo"
 
 const client = new GraphQLClient("https://api.github.com/graphql", {
     headers: {
-        Authorization: 'Bearer 7d8b42c8b5d71240c99ae306ef849b570a48af98',
+        Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
     },
 })
 
