@@ -23,7 +23,7 @@ class GithubStars extends Component {
         this.state = { starredRepositories: [], loading: true, error: null }
         this.query = `{
             viewer { 
-                starredRepositories(last: 6) {
+                starredRepositories(first: 6, orderBy: {field: STARRED_AT, direction: DESC}) {
                     edges {
                         node {
                             id

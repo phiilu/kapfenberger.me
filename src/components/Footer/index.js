@@ -1,55 +1,78 @@
 import React from "react";
-import "./index.css";
+import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Wrapper from "../universal/Wrapper";
 
+const links = [
+  {
+    icon: ["fab", "github"],
+    url: "https://github.com/phiilu"
+  },
+  {
+    icon: ["fab", "twitter"],
+    url: "https://twitter.com/phiilu"
+  },
+  {
+    icon: ["fab", "instagram"],
+    url: "https://instagram.com/phiilu"
+  },
+  {
+    icon: ["fab", "xing"],
+    url: "https://www.xing.com/profile/Florian_Kapfenberger"
+  },
+  {
+    icon: ["fab", "linkedin"],
+    url: "https://www.linkedin.com/in/florian-kapfenberger-59581b164/"
+  }
+];
+
+const FooterWrapper = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+
+  & div {
+    margin: 20px 0;
+  }
+`;
+
+const SocialIcon = styled.a`
+  text-decoration: none;
+  margin: 0 5px;
+
+  & > svg {
+    color: #333;
+    transition: color 0.1s ease-in-out;
+  }
+
+  &:hover > svg {
+    color: #d90429;
+  }
+`;
+
 const Footer = () => (
-  <footer>
+  <FooterWrapper>
     <Wrapper>
       <div>&copy; {new Date().getFullYear()} Florian Kapfenberger</div>
-      <div className="social">
-        <a
-          className="github"
-          href="https://github.com/phiilu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
-        </a>
-        <a
-          href="https://twitter.com/phiilu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" />
-        </a>
-        <a
-          className="instagram"
-          href="https://www.instagram.com/phiilu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
-        </a>
-        <a
-          href="https://www.xing.com/profile/Florian_Kapfenberger"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "xing"]} size="lg" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/florian-kapfenberger-59581b164/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
-        </a>
+      <div>
+        {links.map(link => (
+          <SocialIcon
+            key={link.url}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={link.icon} size="lg" />
+          </SocialIcon>
+        ))}
       </div>
     </Wrapper>
-  </footer>
+  </FooterWrapper>
 );
 
 export default Footer;

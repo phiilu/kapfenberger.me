@@ -1,19 +1,57 @@
 import React from "react";
-import "./index.css";
+import styled from "styled-components";
 
 import Wrapper from "../universal/Wrapper";
 
+const NavigationWrapper = styled.nav`
+  padding: 20px;
+  background: #d90429;
+`;
+
+const NavigationLogo = styled.span`
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  padding: 5px 12px;
+  border: 2px solid white;
+  border-radius: 100px;
+`;
+
+const NavigationLink = styled.a`
+  text-decoration: none;
+  color: #edf2f4;
+`;
+
+const NavigationMenu = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  & > a {
+    margin: 0 20px;
+  }
+
+  & > a:last-child {
+    margin: 0 0 0 20px;
+  }
+`;
+
+const NavigationInner = styled(Wrapper)`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const Navigation = () => (
-  <nav>
-    <Wrapper>
-      <a href="#logo"><span className="logo">F</span></a>
-      <div className="menu">
-        <a href="#Projects">Get To Know Me</a>
-        <a href="#Skills">Portfolio</a>
-        <a href="#Awesome_OSS">OSS Activity</a>
-      </div>
-    </Wrapper>
-  </nav>
+  <NavigationWrapper>
+    <NavigationInner>
+      <NavigationLink>
+        <NavigationLogo>F</NavigationLogo>
+      </NavigationLink>
+      <NavigationMenu>
+        <NavigationLink href="#Projects">Get To Know Me</NavigationLink>
+        <NavigationLink href="#Skills">Portfolio</NavigationLink>
+        <NavigationLink href="#Awesome_OSS">OSS Activity</NavigationLink>
+      </NavigationMenu>
+    </NavigationInner>
+  </NavigationWrapper>
 );
 
 export default Navigation;
