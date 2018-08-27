@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Wrapper from "../../../universal/Wrapper";
+import Link from "../../../universal/Link";
 import GithubStars from "./GithubStars";
 
 const GithubActivitySection = styled.section`
@@ -11,31 +12,35 @@ const GithubActivitySection = styled.section`
     text-align: center;
     font-weight: 300;
     font-size: 1.2em;
+    line-height: 2;
   }
+`;
+
+const SeeMore = styled.p`
+  text-align: center;
 `;
 
 const GithubActivity = () => (
   <GithubActivitySection>
     <Wrapper>
-      <h1>OSS Activity</h1>
+      <h1>GitHub Activity</h1>
       <h4>
-        Seeing new Open Source Software others have built, makes me feel
-        excited.
+        Seeing cool Open Source projects others are building, makes me feel
+        excited. <br /> Here are the latest projects I have starred on GitHub:
       </h4>
-      <h4>Here are the latest six I starred on GitHub:</h4>
       <div>
         <GithubStars />
       </div>
-      <p>
+      <SeeMore>
         See more on my{" "}
-        <a
+        <Link
           href="https://github.com/phiilu?tab=stars"
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
-        </a>
-      </p>
+        </Link>
+      </SeeMore>
     </Wrapper>
   </GithubActivitySection>
 );

@@ -152,7 +152,10 @@ const Portfolio = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={link.icon} />
+                    <FontAwesomeIcon
+                      icon={link.icon}
+                      style={{ color: "#2b2d42" }}
+                    />
                   </a>
                 ))}
               </div>
