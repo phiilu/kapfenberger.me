@@ -7,9 +7,13 @@ import registerServiceWorker from "./registerServiceWorker";
 // FontAwesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt, faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faExternalLinkAlt,
+  faStar,
+  faPaperPlane
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faExternalLinkAlt, faStar);
+library.add(fab, faExternalLinkAlt, faStar, faPaperPlane);
 
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

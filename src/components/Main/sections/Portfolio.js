@@ -124,7 +124,7 @@ const projects = [
 ];
 
 const Portfolio = () => (
-  <PortfolioSection>
+  <PortfolioSection id="portfolio">
     <Wrapper>
       <h1>Portfolio</h1>
       <h4>Here are some projects I worked on:</h4>

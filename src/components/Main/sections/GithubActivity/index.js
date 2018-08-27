@@ -21,7 +21,7 @@ const SeeMore = styled.p`
 `;
 
 const GithubActivity = () => (
-  <GithubActivitySection>
+  <GithubActivitySection id="github-activity">
     <Wrapper>
       <h1>GitHub Activity</h1>
       <h4>

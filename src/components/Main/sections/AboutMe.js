@@ -40,7 +40,7 @@ const AboutMeRightContent = styled.div`
 `;
 
 const AboutMe = () => (
-  <AboutMeSection>
+  <AboutMeSection id="get-to-know-me">
     <Wrapper>
       <h1>Get To Know Me</h1>
       <AboutMeWrapper>

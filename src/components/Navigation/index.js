@@ -46,9 +46,10 @@ const Navigation = () => (
         <NavigationLogo>F</NavigationLogo>
       </NavigationLink>
       <NavigationMenu>
-        <NavigationLink href="#Projects">Get To Know Me</NavigationLink>
-        <NavigationLink href="#Skills">Portfolio</NavigationLink>
-        <NavigationLink href="#Awesome_OSS">OSS Activity</NavigationLink>
+        <NavigationLink href="#get-to-know-me">Get To Know Me</NavigationLink>
+        <NavigationLink href="#portfolio">Portfolio</NavigationLink>
+        <NavigationLink href="#github-activity">GitHub Activity</NavigationLink>
+        <NavigationLink href="#contact">Contact Me</NavigationLink>
       </NavigationMenu>
     </NavigationInner>
   </NavigationWrapper>

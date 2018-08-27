@@ -4,10 +4,12 @@ import styled from "styled-components";
 import AboutMe from "./sections/AboutMe";
 import Portfolio from "./sections/Portfolio";
 import GithubActivity from "./sections/GithubActivity";
+import Contact from "./sections/Contact";
 
 const MainWrapper = styled.main`
   flex: 1;
   padding: 2.5rem 0;
+  padding-bottom: 0;
   background: white;
 
   & h1,
@@ -33,6 +35,7 @@ const Main = () => (
     <AboutMe />
     <Portfolio />
     <GithubActivity />
+    <Contact />
   </MainWrapper>
 );
 
