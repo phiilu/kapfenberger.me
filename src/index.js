@@ -15,5 +15,9 @@ import {
 
 library.add(fab, faExternalLinkAlt, faStar, faPaperPlane);
 
+console.log(
+  "If you want to see the code, you can find it on GitHub: https://github.com/phiilu/site :D"
+);
+
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

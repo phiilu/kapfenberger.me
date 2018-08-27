@@ -10,13 +10,25 @@ import imageMailman from "../../../images/portfolio/Mailman.png";
 import Wrapper from "../../universal/Wrapper";
 
 const PortfolioSection = styled.section`
-  padding: 4rem;
+  padding: 4rem 0;
   background: rgb(246, 246, 246);
 
   & h4 {
     text-align: center;
     font-weight: 300;
     font-size: 1.2em;
+  }
+
+  @media (max-width: 620px) {
+    & h4 {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    & h4 {
+      font-size: 1em;
+    }
   }
 `;
 
@@ -38,26 +50,32 @@ const ProjectWrapper = styled.div`
   margin: 1rem 10px;
   position: relative;
 
-  & .info {
-    padding: 10px;
-    background: white;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media (max-width: 700px) {
+    min-width: 280px;
   }
+`;
 
-  & .info .stack > svg {
-    margin: 0 5px;
+const PortfolioInfo = styled.div`
+  padding: 10px;
+  background: white;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const PortfolioStack = styled.div`
+  & > svg {
+    margin: 0 3px;
   }
+`;
 
-  & .info .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+const PortfolioLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  & .info .links > a {
+  & > a {
     margin: 0 5px;
   }
 `;
@@ -78,6 +96,7 @@ const PortfolioImage = styled.div`
   height: 100%;
   background-image: url(${props => props.image});
   background-size: cover;
+  background-position: center center;
   z-index: 10;
 `;
 
@@ -133,8 +152,8 @@ const Portfolio = () => (
           <ProjectWrapper key={project.name} title={project.name}>
             <PortfolioBackgroundColor color={project.backgroundColor} />
             <PortfolioImage image={project.image} />
-            <div className="info">
-              <div className="stack">
+            <PortfolioInfo>
+              <PortfolioStack>
                 {project.stack.map((technology, i) => (
                   <FontAwesomeIcon
                     key={i}
@@ -143,8 +162,8 @@ const Portfolio = () => (
                     size="lg"
                   />
                 ))}
-              </div>
-              <div className="links">
+              </PortfolioStack>
+              <PortfolioLinks>
                 {project.links.map(link => (
                   <a
                     key={link.url}
@@ -158,8 +177,8 @@ const Portfolio = () => (
                     />
                   </a>
                 ))}
-              </div>
-            </div>
+              </PortfolioLinks>
+            </PortfolioInfo>
           </ProjectWrapper>
         ))}
       </PortfolioProjects>

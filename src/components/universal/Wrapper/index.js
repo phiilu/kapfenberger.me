@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  max-width: 960px;
+  max-width: 1000px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0px 0px;
+  padding: 0px 20px;
   margin: 0px auto;
 `;
 

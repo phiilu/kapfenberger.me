@@ -6,6 +6,10 @@ import Wrapper from "../universal/Wrapper";
 const NavigationWrapper = styled.nav`
   padding: 20px;
   background: #d90429;
+
+  @media (max-width: 640px) {
+    padding: 10px;
+  }
 `;
 
 const NavigationLogo = styled.span`
@@ -23,7 +27,8 @@ const NavigationLink = styled.a`
 
 const NavigationMenu = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 
   & > a {
     margin: 0 20px;
@@ -32,11 +37,39 @@ const NavigationMenu = styled.div`
   & > a:last-child {
     margin: 0 0 0 20px;
   }
+
+  @media (max-width: 640px) {
+    width: 100%;
+
+    & > a {
+      text-align: center;
+      width: 50%;
+      margin: 0;
+      padding: 10px 0;
+      background: #ce0326;
+      border: 1px solid white;
+    }
+
+    & > a:last-child {
+      margin: 0;
+    }
+  }
 `;
 
 const NavigationInner = styled(Wrapper)`
   display: flex;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+      padding: 10px 0;
+    }
+  }
 `;
 
 const Navigation = () => (

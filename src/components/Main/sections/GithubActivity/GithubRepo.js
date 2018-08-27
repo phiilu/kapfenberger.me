@@ -13,6 +13,12 @@ const Box = styled.div`
   min-height: 150px;
   max-height: 150px;
   margin: 10px;
+
+  @media (max-width: 700px) {
+    width: 280px;
+    min-height: 160px;
+    max-height: 160px;
+  }
 `;
 
 const RepoWrapper = styled.div`
@@ -43,6 +49,10 @@ const RepoStatusLine = styled.p`
   font-size: 12px;
   margin-top: 8px;
   margin-bottom: 0;
+
+  @media (max-width: 340px) {
+    font-size: 10px;
+  }
 `;
 
 const RepoLanguageWrapper = styled.span`

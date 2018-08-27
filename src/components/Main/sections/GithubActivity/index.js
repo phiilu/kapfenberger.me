@@ -14,6 +14,18 @@ const GithubActivitySection = styled.section`
     font-size: 1.2em;
     line-height: 2;
   }
+
+  @media (max-width: 620px) {
+    & h4 {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    & h4 {
+      font-size: 1em;
+    }
+  }
 `;
 
 const SeeMore = styled.p`
@@ -25,21 +37,15 @@ const GithubActivity = () => (
     <Wrapper>
       <h1>GitHub Activity</h1>
       <h4>
-        Seeing cool Open Source projects others are building, makes me feel
-        excited. <br /> Here are the latest projects I have starred on GitHub:
+        Seeing cool Open Source projects others are building excites me. <br />{" "}
+        Here are the latest projects I have starred on GitHub:
       </h4>
       <div>
         <GithubStars />
       </div>
       <SeeMore>
         See more on my{" "}
-        <Link
-          href="https://github.com/phiilu?tab=stars"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </Link>
+        <Link to="https://github.com/phiilu?tab=stars">GitHub</Link>
       </SeeMore>
     </Wrapper>
   </GithubActivitySection>

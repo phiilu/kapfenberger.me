@@ -10,6 +10,10 @@ const HeaderWrapper = styled.header`
   align-items: center;
   margin: 5rem 0;
   text-align: center;
+
+  @media (max-width: 610px) {
+    flex-direction: column;
+  }
 `;
 
 const HeaderFigure = styled.figure`
@@ -22,6 +26,10 @@ const HeaderFigure = styled.figure`
     max-height: 100%;
     border-radius: 5%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  @media (max-width: 610px) {
+    margin: 0;
   }
 `;
 

@@ -13,7 +13,7 @@ const client = new GraphQLClient("https://api.github.com/graphql", {
 const GithubRepos = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 const pulse = keyframes`
@@ -33,6 +33,12 @@ const GithubRepoPlaceholder = styled.div`
   height: 150px;
   animation: ${pulse} 1s linear infinite;
   animation-delay: ${p => p.delay || 0}ms;
+
+  @media (max-width: 700px) {
+    width: 280px;
+    min-height: 160px;
+    max-height: 160px;
+  }
 `;
 
 const ErrorMessage = styled.h4`
