@@ -12,6 +12,7 @@ import {
 
 import 'normalize.css'
 import './index.css'
+import '../shared/globalStyles'
 
 library.add(fab, faExternalLinkAlt, faStar, faPaperPlane, faBars)
 

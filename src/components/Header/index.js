@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
-import imageMe from '../../images/me.jpg'
 import Wrapper from '../universal/Wrapper'
 
 const HeaderWrapper = styled.header`
@@ -19,14 +19,6 @@ const HeaderWrapper = styled.header`
 const HeaderFigure = styled.figure`
   margin: 0 20px 0 0;
   width: 200px;
-  height: 200px;
-
-  & > img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
 
   @media (max-width: 610px) {
     margin: 0;
@@ -43,11 +35,25 @@ const HeaderIntroduction = styled.div`
   }
 `
 
-const Header = () => (
+const Header = ({ profileImage }) => (
   <Wrapper>
     <HeaderWrapper>
       <HeaderFigure>
-        <img src={imageMe} alt="Profilbild" />
+        <Img
+          style={{
+            transition: 'all 1s ease-in-out',
+            background: 'transparent',
+            borderRadius: '5%',
+          }}
+          imgStyle={{
+            maxWidth: '100%',
+            maxHeight: '100%',
+            borderRadius: '5%',
+          }}
+          sizes={profileImage.childImageSharp.sizes}
+          alt="Profilbild"
+          backgroundColor={false}
+        />
       </HeaderFigure>
       <HeaderIntroduction>
         <h1>What's up, I'm Flo!</h1>

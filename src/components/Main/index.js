@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import AboutMe from "./sections/AboutMe";
-import Portfolio from "./sections/Portfolio";
-import GithubActivity from "./sections/GithubActivity";
-import Contact from "./sections/Contact";
+import AboutMe from './sections/AboutMe'
+import Portfolio from './sections/Portfolio'
+import GithubActivity from './sections/GithubActivity'
+import Contact from './sections/Contact'
 
 const MainWrapper = styled.main`
   flex: 1;
@@ -18,7 +18,7 @@ const MainWrapper = styled.main`
   }
 
   & h1::after {
-    content: "";
+    content: '';
     display: block;
     height: 4px;
     width: 25px;
@@ -28,15 +28,15 @@ const MainWrapper = styled.main`
 
     border-radius: 3px;
   }
-`;
+`
 
-const Main = () => (
+const Main = ({ waffleImage }) => (
   <MainWrapper>
-    <AboutMe />
+    <AboutMe waffleImage={waffleImage} />
     <Portfolio />
     <GithubActivity />
     <Contact />
   </MainWrapper>
-);
+)
 
-export default Main;
+export default Main
