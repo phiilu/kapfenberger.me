@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import imageMe from "../../images/me.jpg";
-import Wrapper from "../universal/Wrapper";
+import imageMe from '../../images/me.jpg'
+import Wrapper from '../universal/Wrapper'
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -14,7 +14,7 @@ const HeaderWrapper = styled.header`
   @media (max-width: 610px) {
     flex-direction: column;
   }
-`;
+`
 
 const HeaderFigure = styled.figure`
   margin: 0 20px 0 0;
@@ -31,7 +31,7 @@ const HeaderFigure = styled.figure`
   @media (max-width: 610px) {
     margin: 0;
   }
-`;
+`
 
 const HeaderIntroduction = styled.div`
   flex: 1;
@@ -41,7 +41,7 @@ const HeaderIntroduction = styled.div`
   & h3 {
     font-weight: normal;
   }
-`;
+`
 
 const Header = () => (
   <Wrapper>
@@ -52,16 +52,16 @@ const Header = () => (
       <HeaderIntroduction>
         <h1>What's up, I'm Flo!</h1>
         <h3>
-          I am a software developer from Austria{" "}
+          I am a software developer from Austria{' '}
           <span role="img" aria-label="Flag of Austria">
             🇦🇹
-          </span>{" "}
+          </span>{' '}
           and very passionate about
           <strong> Frontend Development</strong>.
         </h3>
       </HeaderIntroduction>
     </HeaderWrapper>
   </Wrapper>
-);
+)
 
-export default Header;
+export default Header

@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import { GraphQLClient } from "graphql-request";
-import styled, { keyframes } from "styled-components";
+import React, { Component } from 'react'
+import { GraphQLClient } from 'graphql-request'
+import styled, { keyframes } from 'styled-components'
 
-import GithubRepo from "./GithubRepo";
+import GithubRepo from './GithubRepo'
 
-const client = new GraphQLClient("https://api.github.com/graphql", {
+const client = new GraphQLClient('https://api.github.com/graphql', {
   headers: {
-    Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`
-  }
-});
+    Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+  },
+})
 
 const GithubRepos = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`;
+`
 
 const pulse = keyframes`
   0%, 100% {
@@ -23,7 +23,7 @@ const pulse = keyframes`
   50% {
     opacity: 0.4;
   }
-`;
+`
 
 const GithubRepoPlaceholder = styled.div`
   background: #eee;
@@ -39,17 +39,17 @@ const GithubRepoPlaceholder = styled.div`
     min-height: 160px;
     max-height: 160px;
   }
-`;
+`
 
 const ErrorMessage = styled.h4`
   text-align: center;
   color: #d90429;
-`;
+`
 
 class GithubStars extends Component {
   constructor(props) {
-    super(props);
-    this.state = { starredRepositories: [], loading: true, error: null };
+    super(props)
+    this.state = { starredRepositories: [], loading: true, error: null }
     this.query = `{
             viewer { 
                 starredRepositories(first: 6, orderBy: {field: STARRED_AT, direction: DESC}) {
@@ -71,7 +71,7 @@ class GithubStars extends Component {
                     }
                 }
             }
-        }`;
+        }`
   }
 
   componentDidMount() {
@@ -80,10 +80,10 @@ class GithubStars extends Component {
       .then(data =>
         this.setState({
           starredRepositories: data.viewer.starredRepositories.edges,
-          loading: false
+          loading: false,
         })
       )
-      .catch(error => this.setState({ error, loading: false }));
+      .catch(error => this.setState({ error, loading: false }))
   }
 
   render() {
@@ -94,17 +94,17 @@ class GithubStars extends Component {
             <GithubRepoPlaceholder key={i} delay={i * 50} />
           ))}
         </GithubRepos>
-      );
+      )
     }
 
     if (this.state.error) {
       return (
         <ErrorMessage>Github Stars could not be loaded R.I.P.</ErrorMessage>
-      );
+      )
     }
 
     if (this.state.starredRepositories.length === 0) {
-      return <span>Empty</span>;
+      return <span>Empty</span>
     }
 
     return (
@@ -113,8 +113,8 @@ class GithubStars extends Component {
           <GithubRepo key={repo.id} repo={repo} />
         ))}
       </GithubRepos>
-    );
+    )
   }
 }
 
-export default GithubStars;
+export default GithubStars
