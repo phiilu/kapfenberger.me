@@ -10,10 +10,11 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faExternalLinkAlt,
   faStar,
-  faPaperPlane
+  faPaperPlane,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faExternalLinkAlt, faStar, faPaperPlane);
+library.add(fab, faExternalLinkAlt, faStar, faPaperPlane, faBars);
 
 console.log(
   "If you want to see the code, you can find it on GitHub: https://github.com/phiilu/site :D"
