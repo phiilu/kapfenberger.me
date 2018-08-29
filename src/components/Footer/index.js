@@ -1,32 +1,33 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Wrapper from "../universal/Wrapper";
+import Wrapper from '../universal/Wrapper'
 
 const links = [
   {
-    icon: ["fab", "github"],
-    url: "https://github.com/phiilu"
+    icon: ['fab', 'github'],
+    url: 'https://github.com/phiilu',
   },
   {
-    icon: ["fab", "twitter"],
-    url: "https://twitter.com/phiilu"
+    icon: ['fab', 'twitter'],
+    url: 'https://twitter.com/phiilu',
   },
   {
-    icon: ["fab", "instagram"],
-    url: "https://instagram.com/phiilu"
+    icon: ['fab', 'instagram'],
+    url: 'https://instagram.com/phiilu',
   },
   {
-    icon: ["fab", "xing"],
-    url: "https://www.xing.com/profile/Florian_Kapfenberger"
+    icon: ['fab', 'xing'],
+    url: 'https://www.xing.com/profile/Florian_Kapfenberger',
   },
   {
-    icon: ["fab", "linkedin"],
-    url: "https://www.linkedin.com/in/florian-kapfenberger-59581b164/"
-  }
-];
+    icon: ['fab', 'linkedin'],
+    url: 'https://www.linkedin.com/in/florian-kapfenberger-59581b164/',
+  },
+]
 
 const FooterWrapper = styled.footer`
   display: flex;
@@ -39,9 +40,9 @@ const FooterWrapper = styled.footer`
   & div {
     margin: 20px 0;
   }
-`;
+`
 
-const SocialIcon = styled.a`
+const SocialIcon = styled(OutboundLink)`
   text-decoration: none;
   margin: 0 5px;
 
@@ -53,7 +54,7 @@ const SocialIcon = styled.a`
   &:hover > svg {
     color: #d90429;
   }
-`;
+`
 
 const Footer = () => (
   <FooterWrapper>
@@ -73,6 +74,6 @@ const Footer = () => (
       </div>
     </Wrapper>
   </FooterWrapper>
-);
+)
 
-export default Footer;
+export default Footer

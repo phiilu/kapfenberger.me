@@ -1,13 +1,14 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import imageMPFilms from "../../../images/portfolio/MPFilms.at.png";
-import imageOberkellner from "../../../images/portfolio/Oberkellner-Franz.png";
-import imageSteinnacher from "../../../images/portfolio/Steinnacher.at.png";
-import imageMailman from "../../../images/portfolio/Mailman.png";
+import imageMPFilms from '../../../images/portfolio/MPFilms.at.png'
+import imageOberkellner from '../../../images/portfolio/Oberkellner-Franz.png'
+import imageSteinnacher from '../../../images/portfolio/Steinnacher.at.png'
+import imageMailman from '../../../images/portfolio/Mailman.png'
 
-import Wrapper from "../../universal/Wrapper";
+import Wrapper from '../../universal/Wrapper'
 
 const PortfolioSection = styled.section`
   padding: 4rem 0;
@@ -30,13 +31,13 @@ const PortfolioSection = styled.section`
       font-size: 1em;
     }
   }
-`;
+`
 
 const PortfolioProjects = styled.div`
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-`;
+`
 
 const ProjectWrapper = styled.div`
   display: flex;
@@ -53,7 +54,7 @@ const ProjectWrapper = styled.div`
   @media (max-width: 700px) {
     min-width: 280px;
   }
-`;
+`
 
 const PortfolioInfo = styled.div`
   padding: 10px;
@@ -62,13 +63,13 @@ const PortfolioInfo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 const PortfolioStack = styled.div`
   & > svg {
     margin: 0 3px;
   }
-`;
+`
 
 const PortfolioLinks = styled.div`
   display: flex;
@@ -78,7 +79,7 @@ const PortfolioLinks = styled.div`
   & > a {
     margin: 0 5px;
   }
-`;
+`
 
 const PortfolioBackgroundColor = styled.div`
   width: 100%;
@@ -89,7 +90,7 @@ const PortfolioBackgroundColor = styled.div`
   left: 0;
   right: 0;
   background-color: ${props => props.color};
-`;
+`
 
 const PortfolioImage = styled.div`
   width: 100%;
@@ -98,49 +99,51 @@ const PortfolioImage = styled.div`
   background-size: cover;
   background-position: center center;
   z-index: 10;
-`;
+`
 
 const projects = [
   {
-    name: "MPFilms",
+    name: 'MPFilms',
     image: imageMPFilms,
-    backgroundColor: "lightgreen",
+    backgroundColor: 'lightgreen',
     stack: [
-      { icon: "html5", color: "#e34f26" },
-      { icon: "css3-alt", color: "#2f77b8" },
-      { icon: "js-square", color: "#f7df1e" }
+      { icon: 'html5', color: '#e34f26' },
+      { icon: 'css3-alt', color: '#2f77b8' },
+      { icon: 'js-square', color: '#f7df1e' },
     ],
-    links: [{ icon: "external-link-alt", url: "http://mpfilms.at" }]
+    links: [{ icon: 'external-link-alt', url: 'http://mpfilms.at' }],
   },
   {
-    name: "Oberkellner Franz",
+    name: 'Oberkellner Franz',
     image: imageOberkellner,
-    backgroundColor: "#4f9ef1",
-    stack: [{ icon: "angular", color: "#cc2b39" }],
-    links: [{ icon: "external-link-alt", url: "https://oberkellner-franz.at/" }]
-  },
-  {
-    name: "Mailman",
-    image: imageMailman,
-    backgroundColor: "#ffc400",
-    stack: [{ icon: "react", color: "#80d8f7" }],
+    backgroundColor: '#4f9ef1',
+    stack: [{ icon: 'angular', color: '#cc2b39' }],
     links: [
-      { icon: "external-link-alt", url: "https://github.com/phiilu/mailman" }
-    ]
+      { icon: 'external-link-alt', url: 'https://oberkellner-franz.at/' },
+    ],
   },
   {
-    name: "Steinnacher.at",
-    image: imageSteinnacher,
-    backgroundColor: "antiquewhite",
-    stack: [
-      { icon: "html5", color: "#e34f26" },
-      { icon: "css3-alt", color: "#2f77b8" },
-      { icon: "js-square", color: "#f7df1e" },
-      { icon: "php", color: "#777caf" }
+    name: 'Mailman',
+    image: imageMailman,
+    backgroundColor: '#ffc400',
+    stack: [{ icon: 'react', color: '#80d8f7' }],
+    links: [
+      { icon: 'external-link-alt', url: 'https://github.com/phiilu/mailman' },
     ],
-    links: [{ icon: "external-link-alt", url: "http://steinnacher.at" }]
-  }
-];
+  },
+  {
+    name: 'Steinnacher.at',
+    image: imageSteinnacher,
+    backgroundColor: 'antiquewhite',
+    stack: [
+      { icon: 'html5', color: '#e34f26' },
+      { icon: 'css3-alt', color: '#2f77b8' },
+      { icon: 'js-square', color: '#f7df1e' },
+      { icon: 'php', color: '#777caf' },
+    ],
+    links: [{ icon: 'external-link-alt', url: 'http://steinnacher.at' }],
+  },
+]
 
 const Portfolio = () => (
   <PortfolioSection id="portfolio">
@@ -158,14 +161,14 @@ const Portfolio = () => (
                   <FontAwesomeIcon
                     key={i}
                     style={{ color: technology.color }}
-                    icon={["fab", technology.icon]}
+                    icon={['fab', technology.icon]}
                     size="lg"
                   />
                 ))}
               </PortfolioStack>
               <PortfolioLinks>
                 {project.links.map(link => (
-                  <a
+                  <OutboundLink
                     key={link.url}
                     href={link.url}
                     target="_blank"
@@ -173,9 +176,9 @@ const Portfolio = () => (
                   >
                     <FontAwesomeIcon
                       icon={link.icon}
-                      style={{ color: "#2b2d42" }}
+                      style={{ color: '#2b2d42' }}
                     />
-                  </a>
+                  </OutboundLink>
                 ))}
               </PortfolioLinks>
             </PortfolioInfo>
@@ -184,6 +187,6 @@ const Portfolio = () => (
       </PortfolioProjects>
     </Wrapper>
   </PortfolioSection>
-);
+)
 
-export default Portfolio;
+export default Portfolio

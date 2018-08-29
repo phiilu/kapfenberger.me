@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import imageLogoWaffle from '../../../images/logo-waffle.png'
 import Wrapper from '../../universal/Wrapper'
 import Link from '../../universal/Link'
 
