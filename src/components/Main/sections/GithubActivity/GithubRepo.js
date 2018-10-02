@@ -12,13 +12,11 @@ const Box = styled.div`
   width: 300px;
   max-width: 300px;
   min-height: 150px;
-  max-height: 150px;
   margin: 10px;
 
   @media (max-width: 700px) {
     width: 280px;
     min-height: 160px;
-    max-height: 160px;
   }
 `
 
