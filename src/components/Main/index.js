@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import AboutMe from './sections/AboutMe'
 import Portfolio from './sections/Portfolio'
 import GithubActivity from './sections/GithubActivity'
+import Learning from './sections/Learning'
 import Contact from './sections/Contact'
 
 const MainWrapper = styled.main`
@@ -35,6 +36,7 @@ const Main = ({ waffleImage }) => (
     <AboutMe waffleImage={waffleImage} />
     <Portfolio />
     <GithubActivity />
+    <Learning />
     <Contact />
   </MainWrapper>
 )

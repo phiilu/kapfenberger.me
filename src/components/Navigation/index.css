@@ -17,6 +17,13 @@ nav {
   border-radius: 100px;
 }
 
+.logo-mobile {
+  text-decoration: none;
+  color: #edf2f4;
+  padding: 5px 13px;
+  font-size: 1.2em;
+}
+
 .icon {
   cursor: pointer;
 }
@@ -86,17 +93,23 @@ nav {
   opacity: 0.8;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 745px) {
   .icon {
     display: none;
   }
   .menu {
     display: none;
   }
+  .logo-mobile {
+    display: none;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 745px) {
   .wide-menu {
+    display: none;
+  }
+  .logo {
     display: none;
   }
 }

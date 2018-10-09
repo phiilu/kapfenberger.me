@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import "./index.css";
+import './index.css'
 
 export default class Navigation extends Component {
-  state = { show: false };
+  state = { show: false }
 
   render() {
     return (
@@ -13,6 +13,9 @@ export default class Navigation extends Component {
           <div className="main-nav">
             <a href="/" className="logo">
               F
+            </a>
+            <a href="/" className="logo-mobile">
+              Florian Kapfenberger
             </a>
             <FontAwesomeIcon
               className="icon"
@@ -24,11 +27,12 @@ export default class Navigation extends Component {
               <a href="#get-to-know-me">Get To Know Me</a>
               <a href="#portfolio">Portfolio</a>
               <a href="#github-activity">GitHub Activity</a>
+              <a href="#always-learning">Always Learning</a>
               <a href="#contact">Contact Me</a>
             </div>
           </div>
         </div>
-        <div className={`menu ${this.state.show ? "show" : ""}`}>
+        <div className={`menu ${this.state.show ? 'show' : ''}`}>
           <div className="wrapper flex-menu">
             <a
               href="#get-to-know-me"
@@ -51,6 +55,6 @@ export default class Navigation extends Component {
           </div>
         </div>
       </nav>
-    );
+    )
   }
 }
