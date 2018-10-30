@@ -142,6 +142,7 @@ const Learning = () => (
               href={instructor.url}
               target="_blank"
               rel="noopener noreferrer"
+              title={instructor.name}
             >
               <LazyLoad height={156} once>
                 <img src={instructor.image} alt={instructor.name} />

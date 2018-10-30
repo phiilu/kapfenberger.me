@@ -8,22 +8,27 @@ import Wrapper from '../universal/Wrapper'
 
 const links = [
   {
+    name: 'Github',
     icon: ['fab', 'github'],
     url: 'https://github.com/phiilu',
   },
   {
+    name: 'Twitter',
     icon: ['fab', 'twitter'],
     url: 'https://twitter.com/phiilu',
   },
   {
+    name: 'Instagram',
     icon: ['fab', 'instagram'],
     url: 'https://instagram.com/phiilu',
   },
   {
+    name: 'Xing',
     icon: ['fab', 'xing'],
     url: 'https://www.xing.com/profile/Florian_Kapfenberger',
   },
   {
+    name: 'Linkedin',
     icon: ['fab', 'linkedin'],
     url: 'https://www.linkedin.com/in/florian-kapfenberger-59581b164/',
   },
@@ -67,6 +72,7 @@ const Footer = () => (
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
+            title={link.name}
           >
             <FontAwesomeIcon icon={link.icon} size="lg" />
           </SocialIcon>
