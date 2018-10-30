@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import LazyLoad from 'react-lazyload'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Wrapper from '../../universal/Wrapper'
@@ -89,16 +90,6 @@ const Instructor = styled.div`
 
 const instructors = [
   {
-    name: 'FunFunFunction',
-    image: funFunFunctionImage,
-    url: 'https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q',
-  },
-  {
-    name: 'Wes Bos',
-    image: wesbosImage,
-    url: 'https://wesbos.com/',
-  },
-  {
     name: 'DevTips',
     image: devTipsImage,
     url: 'https://www.youtube.com/user/DevTipsForDesigners/featured',
@@ -114,6 +105,11 @@ const instructors = [
     url: 'https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ',
   },
   {
+    name: 'FunFunFunction',
+    image: funFunFunctionImage,
+    url: 'https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q',
+  },
+  {
     name: 'LearnCode.academy',
     image: learnCodeAcademyImage,
     url: 'https://www.youtube.com/user/learncodeacademy/featured',
@@ -123,7 +119,12 @@ const instructors = [
     image: leveluptutsImage,
     url: 'https://www.youtube.com/user/LevelUpTuts/featured',
   },
-].sort((a, b) => a.name.toLowerCase() > b.name.toLowerCase())
+  {
+    name: 'Wes Bos',
+    image: wesbosImage,
+    url: 'https://wesbos.com/',
+  },
+]
 
 const Learning = () => (
   <LearningSection id="always-learning">
@@ -142,7 +143,9 @@ const Learning = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instructor.image} alt={instructor.name} />
+              <LazyLoad height={156} once>
+                <img src={instructor.image} alt={instructor.name} />
+              </LazyLoad>
             </OutboundLink>
             <span>{instructor.name}</span>
           </Instructor>

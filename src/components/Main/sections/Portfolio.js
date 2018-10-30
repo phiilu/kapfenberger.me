@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
+import LazyLoad from 'react-lazyload'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import imageMPFilms from '../../../images/portfolio/MPFilms.at.png'
@@ -164,7 +165,9 @@ const Portfolio = () => (
         {projects.map(project => (
           <ProjectWrapper key={project.name} title={project.name}>
             <PortfolioBackgroundColor color={project.backgroundColor} />
-            <PortfolioImage image={project.image} />
+            <LazyLoad height={160.72}>
+              <PortfolioImage image={project.image} />
+            </LazyLoad>
             <PortfolioInfo>
               <PortfolioStack>
                 {project.stack.map((technology, i) => (
