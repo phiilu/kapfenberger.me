@@ -6,14 +6,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['M PLUS Rounded 1c', 'Source Sans Pro'],
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-51334401-3 ',

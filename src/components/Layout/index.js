@@ -9,10 +9,10 @@ import {
   faBars,
 } from '@fortawesome/free-solid-svg-icons'
 
+import GlobalStyles from '../../shared/GlobalStyles'
+
 import 'normalize.css'
 import './index.css'
-import '../../shared/globalStyles'
-
 library.add(fab, faExternalLinkAlt, faStar, faPaperPlane, faBars)
 
 console.log(
@@ -38,6 +38,7 @@ const Layout = ({ children }) => (
     >
       <html lang="en" />
     </Helmet>
+    <GlobalStyles />
     {children}
   </div>
 )

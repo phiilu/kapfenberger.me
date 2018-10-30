@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import fontFiles from './fonts.js'
 
-export default createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -28,3 +28,5 @@ export default createGlobalStyle`
 }) format("woff"), url(${fontFiles.MPlusRounded1c900}) format("woff");
   }
 `
+
+export default GlobalStyles
