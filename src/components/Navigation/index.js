@@ -49,6 +49,12 @@ export default class Navigation extends Component {
             >
               GitHub Activity
             </a>
+            <a
+              href="#always-learning"
+              onClick={() => this.setState({ show: false })}
+            >
+              Always Learning
+            </a>
             <a href="#contact" onClick={() => this.setState({ show: false })}>
               Contact Me
             </a>
