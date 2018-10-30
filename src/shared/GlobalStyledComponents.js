@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import fontFiles from './fonts.js'
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStylesComponents = createGlobalStyle`
   @font-face {
     font-family: "Source Sans Pro";
     font-style: normal;
