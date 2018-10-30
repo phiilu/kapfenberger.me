@@ -29,4 +29,4 @@ const GlobalStylesComponents = createGlobalStyle`
   }
 `
 
-export default GlobalStyles
+export default GlobalStylesComponents

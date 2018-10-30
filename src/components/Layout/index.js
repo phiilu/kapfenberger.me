@@ -9,7 +9,7 @@ import {
   faBars,
 } from '@fortawesome/free-solid-svg-icons'
 
-import GlobalStyles from '../../shared/GlobalStyles'
+import GlobalStyledComponents from '../../shared/GlobalStyledComponents'
 
 import 'normalize.css'
 import './index.css'
@@ -38,7 +38,7 @@ const Layout = ({ children }) => (
     >
       <html lang="en" />
     </Helmet>
-    <GlobalStyles />
+    <GlobalStyledComponents />
     {children}
   </div>
 )
