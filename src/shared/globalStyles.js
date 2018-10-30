@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import fontFiles from './fonts.js'
 
-export default injectGlobal`
+export default createGlobalStyle`
 
   @font-face {
     font-family: "Source Sans Pro";

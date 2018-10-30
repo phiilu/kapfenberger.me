@@ -7,6 +7,7 @@ import imageMPFilms from '../../../images/portfolio/MPFilms.at.png'
 import imageOberkellner from '../../../images/portfolio/Oberkellner-Franz.png'
 import imageSteinnacher from '../../../images/portfolio/Steinnacher.at.png'
 import imageMailman from '../../../images/portfolio/Mailman.png'
+import imageStadtkinoHainfeld from '../../../images/portfolio/Stadtkino-Hainfeld.png'
 
 import Wrapper from '../../universal/Wrapper'
 
@@ -142,6 +143,15 @@ const projects = [
       { icon: 'php', color: '#777caf' },
     ],
     links: [{ icon: 'external-link-alt', url: 'http://steinnacher.at' }],
+  },
+  {
+    name: 'Stadtkino Hainfeld (unofficial)',
+    image: imageStadtkinoHainfeld,
+    backgroundColor: '#546597',
+    stack: [{ icon: 'react', color: '#80d8f7' }],
+    links: [
+      { icon: 'external-link-alt', url: 'https://stadtkino-hainfeld.at' },
+    ],
   },
 ]
 
