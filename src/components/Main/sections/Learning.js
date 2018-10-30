@@ -142,7 +142,7 @@ const Learning = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instructor.image} />
+              <img src={instructor.image} alt={instructor.name} />
             </OutboundLink>
             <span>{instructor.name}</span>
           </Instructor>

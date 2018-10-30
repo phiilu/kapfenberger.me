@@ -35,7 +35,9 @@ const Layout = ({ children }) => (
             'web developer, frontend developer, webentwickler, reactjs developer, reactjs webentwickler, react, reactjs, programmierer, persönliche website, portfolio',
         },
       ]}
-    />
+    >
+      <html lang="en" />
+    </Helmet>
     {children}
   </div>
 )

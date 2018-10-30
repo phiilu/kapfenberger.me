@@ -7,6 +7,7 @@ export default createGlobalStyle`
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: local("Source Sans Pro"), url(${
       fontFiles.SourceSansProRegular
     }) format("woff");
@@ -16,6 +17,7 @@ export default createGlobalStyle`
     font-family: "M PLUS Rounded 1c";
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
     src: local("M PLUS Rounded 1c"), url(${
       fontFiles.MPlusRounded1cRegular
     }) format("woff"), url(${

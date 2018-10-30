@@ -183,6 +183,7 @@ const Portfolio = () => (
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={project.name}
                   >
                     <FontAwesomeIcon
                       icon={link.icon}
