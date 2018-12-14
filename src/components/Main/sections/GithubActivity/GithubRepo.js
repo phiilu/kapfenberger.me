@@ -87,16 +87,16 @@ const GithubRepo = ({ repo }) => (
       </RepoLink>
       <RepoDescription>{repo.description}</RepoDescription>
       <RepoStatusLine>
-        <RepoLanguageWrapper>
-          <RepoLanguageColor
-            style={{
-              backgroundColor: repo.primaryLanguage
-                ? repo.primaryLanguage.color
-                : 'tomato',
-            }}
-          />
-          <span>{repo.primaryLanguage ? repo.primaryLanguage.name : ''}</span>
-        </RepoLanguageWrapper>
+        {repo.primaryLanguage && (
+          <RepoLanguageWrapper>
+            <RepoLanguageColor
+              style={{
+                backgroundColor: repo.primaryLanguage.color,
+              }}
+            />
+            <span>{repo.primaryLanguage.name}</span>
+          </RepoLanguageWrapper>
+        )}
         <RepoStargazers>
           <FontAwesomeIcon icon="star" />
           {repo.stargazers.totalCount}
