@@ -89,7 +89,7 @@ const GithubRepo = ({ repo }) => (
       <RepoStatusLine>
         <RepoLanguageWrapper>
           <RepoLanguageColor
-            style={{ backgroundColor: repo.primaryLanguage.color }}
+            style={{ backgroundColor: repo.primaryLanguage ? repo.primaryLanguage.color : "tomato" }}
           />
           <span>{repo.primaryLanguage.name}</span>
         </RepoLanguageWrapper>
