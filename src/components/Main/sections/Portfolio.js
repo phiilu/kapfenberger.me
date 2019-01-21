@@ -144,16 +144,7 @@ const projects = [
       { icon: 'php', color: '#777caf' },
     ],
     links: [{ icon: 'external-link-alt', url: 'http://steinnacher.at' }],
-  },
-  {
-    name: 'Stadtkino Hainfeld - Konzept',
-    image: imageStadtkinoHainfeld,
-    backgroundColor: '#546597',
-    stack: [{ icon: 'react', color: '#80d8f7' }],
-    links: [
-      { icon: 'external-link-alt', url: 'https://kino.kapfenberger.me/' },
-    ],
-  },
+  }
 ]
 
 const Portfolio = () => (
