@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/*"
+  to = "https://phiilu.com"
+  status = 301
+  force = false
+  query = {path = ":path"}
