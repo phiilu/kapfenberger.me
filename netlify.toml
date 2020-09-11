@@ -1,6 +1,5 @@
 [[redirects]]
-  from = "/*"
-  to = "https://phiilu.com"
+  from = "https://kapfenberger.me/*"
+  to = "https://phiilu.com/:splat?ref=kapfenberger.me"
   status = 301
-  force = false
-  query = {path = ":path"}
+  force = true
